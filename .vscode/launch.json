@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "Attach to Chrome",
+      "port": 9229,
+      "request": "attach",
+      "type": "pwa-chrome",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Attach by Process ID",
+      "processId": "${command:PickProcess}",
+      "request": "attach",
+      "skipFiles": ["<node_internals>/**"],
+      "localRoot": "${workspaceFolder}/Source",
+      "type": "pwa-node"
+    }
+  ]
+}
